@@ -1,11 +1,14 @@
 body {
-  margin: 0;
+  margin: 0rem;
+  background-image: url(../src/Images/bananas.jpg);
 }
 
 .navbar {
   background-color: #b44242a1;
   color: #fff;
-  max-width: 100%;
+  width: 100%;
+  position-x: ;
+  position: fixed;
 }
 
 .container {
@@ -13,15 +16,20 @@ body {
   justify-content: space-between;
   align-items: center;
   max-width: 95%;
-  height: 70px;
+  height: 100px;
   margin: 0 auto;
-  padding: 0 20px;
+  margin-left: 15px;
 }
 
 .logo {
   font-size: 24px;
 }
 
+section{
+  margin-top: 2rem;
+  height: 150vh;
+}
+/*
 .nav-links {
   list-style: none;
   display: flex;
@@ -41,3 +49,4 @@ body {
 .nav-links a:hover {
   font-size: 18px;
 }
+*/
