@@ -1,14 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@200;300;400;500;600;700&display=swap');
+
 body {
   margin: 0rem;
+  font-family: 'Rubik', sans-serif;
   background-image: url(../src/Images/bananas.jpg);
 }
 
 .navbar {
-  background-color: #b44242a1;
+  background-color: #880000a1;
   color: #fff;
   width: 100%;
-  position-x: ;
   position: fixed;
+  top: 0;
+  left: 0;
+}
+
+html{
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -26,8 +34,15 @@ body {
 }
 
 section{
-  margin-top: 2rem;
-  height: 150vh;
+  height: 72vh;
+}
+
+h1, h2, h3, h4, h5{
+  font-weight:500;
+}
+
+h1{
+  font-size: 2.5rem;
 }
 /*
 .nav-links {

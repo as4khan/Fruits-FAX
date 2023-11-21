@@ -1,7 +1,52 @@
-header{
-    font-size: larger;
+.about__container{
+    display: flex;
+    height: 590px;
 }
 
-title{
-    background-color: black;
+.about__description{
+    font-size: 21px;
+    background-color: #d80303a1;
+    color: white;
+    width: 60%;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    margin-left: 15px;
+    margin-right: 40px;
+    border-radius: 2rem;
 }
+
+.about__image{
+    width: 40%;
+    background-color: #d80303a1;
+    height: 100%;
+    border-radius: 2rem;
+    margin-right: 15px;
+}
+
+.about__image img{
+    margin-top: -15px;
+    padding-left: 30px;
+    width: 90%;
+    height: 85%;
+    
+}
+
+.about__image h3{
+    color: white;
+    text-align: center;;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/*
+.about__title{
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+}
+
+.about__description{
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+}
+*/

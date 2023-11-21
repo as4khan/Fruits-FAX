@@ -21,7 +21,7 @@
 }
 
 .nav-links a.active{
-    background-color: rgba(180, 66, 66, 0.65);
+    background-color: rgba(255, 0, 0, 0.65);
     color: white;
 }
 
@@ -30,6 +30,7 @@
 }
 
 .logo img{
+    padding-top: 6.5px;
     max-width: 88px;
     max-height: 100%;
 }
