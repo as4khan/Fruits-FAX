@@ -1,0 +1,29 @@
+.whole {
+  background-color: antiquewhite;
+  border-radius: 10px;
+  width: 500px;
+  margin: 20px;
+}
+
+.whole > .fields {
+  text-align: center;
+  padding: 5px;
+}
+
+#box {
+  width: 80%;
+  height: 30px;
+  margin: 10px;
+  font-size: medium;
+}
+
+.innerBox {
+  background-color: grey;
+  margin: 25px;
+  border-radius: 20px;
+  text-align: center;
+  padding: 5px;
+}
+.innerBox p {
+  font-size: 20px;
+}
