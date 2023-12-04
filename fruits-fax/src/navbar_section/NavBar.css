@@ -5,6 +5,7 @@
 
 .nav-links li {
   margin: 0 15px;
+  display: flex;
 }
 
 .nav-links a {
@@ -30,7 +31,13 @@
 }
 
 .logo img {
-  padding-top: 6.5px;
+  padding: 5px;
   width: 88px;
   height: 100%;
+}
+
+.container {
+  margin-right: 20px !important;
+  margin-left: 20px !important;
+  max-width: 100vw !important;
 }

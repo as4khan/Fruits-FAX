@@ -1,67 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@200;300;400;500;600;700&display=swap");
 
 body {
-  margin: 0rem;
-  font-family: 'Rubik', sans-serif;
-  background-image: url(../src/Images/bananas.jpg);
+  font-family: "Rubik", sans-serif !important;
+  background-color: rgb(243, 247, 248);
 }
 
 .navbar {
   background-color: #880000a1;
   color: #fff;
   width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
+  position: fixed !important;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 95%;
-  height: 100px;
-  margin: 0 auto;
-  margin-left: 15px;
-}
-
-.logo {
-  font-size: 24px;
-}
-
-section{
+section {
   height: 72vh;
 }
-
-h1, h2, h3, h4, h5{
-  font-weight:500;
-}
-
-h1{
-  font-size: 2.5rem;
-}
-/*
-.nav-links {
-  list-style: none;
-  display: flex;
-}
-
-.nav-links li {
-  margin: 0 15px;
-}
-
-.nav-links a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 16px;
-  transition: font-size 0.2s;
-}
-
-.nav-links a:hover {
-  font-size: 18px;
-}
-*/

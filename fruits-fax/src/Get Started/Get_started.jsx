@@ -2,64 +2,64 @@ import React, { useState } from "react";
 
 import "./get_started.css";
 
-import {
-  getStorage,
-  ref,
-  uploadBytesResumable,
-  getDownloadURL,
-} from "firebase/storage";
-import { storage } from "../firebase"; // Import your Firebase storage configuration
+// import {
+//   getStorage,
+//   ref,
+//   uploadBytesResumable,
+//   getDownloadURL,
+// } from "firebase/storage";
+// import { storage } from "../firebase";
 
 const Get_started = () => {
-  const [file, setFile] = useState(null);
-  const [downloadURL, setDownloadURL] = useState(null);
+  // const [file, setFile] = useState(null);
+  // const [downloadURL, setDownloadURL] = useState(null);
 
-  const handleFileChange = (event) => {
-    const selectedFile = event.target.files[0];
-    setFile(selectedFile);
-  };
+  // const handleFileChange = (event) => {
+  //   const selectedFile = event.target.files[0];
+  //   setFile(selectedFile);
+  // };
 
-  const handleUpload = () => {
-    if (!file) {
-      console.error("No file selected");
-      return;
-    }
+  // const handleUpload = () => {
+  //   if (!file) {
+  //     console.error("No file selected");
+  //     return;
+  //   }
 
-    const storageRef = ref(storage, "images/" + file.name);
-    const metadata = {
-      contentType: "image/jpeg",
-    };
+  //   const storageRef = ref(storage, "images/" + file.name);
+  //   const metadata = {
+  //     contentType: "image/jpeg",
+  //   };
 
-    const uploadTask = uploadBytesResumable(storageRef, file, metadata);
+  //   const uploadTask = uploadBytesResumable(storageRef, file, metadata);
 
-    uploadTask.on(
-      "state_changed",
-      (snapshot) => {
-        const progress =
-          (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-        console.log("Upload is " + progress + "% done");
-        switch (snapshot.state) {
-          case "paused":
-            console.log("Upload is paused");
-            break;
-          case "running":
-            console.log("Upload is running");
-            break;
-        }
-      },
-      (error) => {
-        console.error("Error uploading:", error.code, error.message);
-        // Handle errors here
-      },
-      () => {
-        // Upload completed successfully, now we can get the download URL
-        getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
-          console.log("File available at", downloadURL);
-          setDownloadURL(downloadURL); // Set the download URL in state
-        });
-      }
-    );
-  };
+  //   uploadTask.on(
+  //     "state_changed",
+  //     (snapshot) => {
+  //       const progress =
+  //         (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+  //       console.log("Upload is " + progress + "% done");
+  //       switch (snapshot.state) {
+  //         case "paused":
+  //           console.log("Upload is paused");
+  //           break;
+  //         case "running":
+  //           console.log("Upload is running");
+  //           break;
+  //       }
+  //     },
+  //     (error) => {
+  //       console.error("Error uploading:", error.code, error.message);
+  //       // Handle errors here
+  //     },
+  //     () => {
+  //       // Upload completed successfully, now we can get the download URL
+  //       getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
+  //         console.log("File available at", downloadURL);
+  //         setDownloadURL(downloadURL); // Set the download URL in state
+  //       });
+  //     }
+  //   );
+  // };
 
   const confirm = async () => {
     let name = document.getElementById("name").value;
@@ -161,7 +161,7 @@ const Get_started = () => {
         </div>
         <div id="display"></div>
 
-        <div className="App">
+        {/* <div className="App">
           <input type="file" onChange={handleFileChange} />
           <button onClick={handleUpload}>Upload</button>
 
@@ -174,7 +174,7 @@ const Get_started = () => {
               <img src={downloadURL} alt="Latest Uploaded" />
             </div>
           )}
-        </div>
+        </div> */}
       </div>
     </section>
   );

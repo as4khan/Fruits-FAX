@@ -1,17 +1,23 @@
-
-.header{
-    margin-top: 29vh;
-    text-align: center;
-    position: relative;
-    color: #db6060a1;
-    font-size: 25px
+.header {
+  color: rgba(255, 0, 0, 0.65);
+  font-size: 25px;
+  padding-left: 55vw;
+  padding-top: 40vh;
 }
 
-.title{
-margin-top: -23vh;    
-text-align: center;
-position: relative;
-font-size: 155px;
-color: #880000a1
+.header h1 {
+  font-size: 135px;
+  margin: 0;
 }
 
+.header h5 {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+#home {
+  background-image: url(../src/Images/bananas.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
