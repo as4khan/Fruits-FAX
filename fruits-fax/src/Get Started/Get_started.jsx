@@ -83,8 +83,8 @@ const Get_started = () => {
 
       document.getElementById("display").innerHTML = searchFruitHTML;
     } catch (error) {
-      alert("PROBLEMS BRUV");
-      console.error("ERROR COULD NOT FETCH FRUIT:", error);
+      alert("ERROR! INPUT THE CORRECT NAME OF THE FRUIT");
+      console.error("ERROR! COULD NOT FETCH FRUIT:", error);
     }
   };
 
@@ -142,7 +142,7 @@ const Get_started = () => {
     <section id="get_started">
       <div className="whole">
         <header>
-          <h1 style={{ textAlign: "center" }}>SEARCHBAR</h1>
+          <h1 style={{ textAlign: "center" }}>Fruit Searchbar</h1>
         </header>
         <div className="fields">
           <input type="text" placeholder="NAME" id="name" />
