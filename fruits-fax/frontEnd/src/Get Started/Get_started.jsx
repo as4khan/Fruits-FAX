@@ -144,7 +144,7 @@ const Get_started = () => {
   };
 
   return (
-    <div id="get_started">
+    <section id="get_started">
       <h1>Fruit Searchbar</h1>
       <div class="search">
         <input type="text" placeholder="Name of Fruit" id="name" />
@@ -161,7 +161,7 @@ const Get_started = () => {
         Search by Picture
       </button>
       <div id="display"></div>
-    </div>
+    </section>
   );
 
   {
