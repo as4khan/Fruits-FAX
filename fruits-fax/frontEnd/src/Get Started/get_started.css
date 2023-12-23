@@ -6,7 +6,7 @@
   background-color: rgba(255, 0, 0, 0.65);
   padding: 40px;
   max-width: 100%;
-  min-height: 650px;
+  min-height: 800px;
 }
 h1 {
   font-size: 7rem !important;
@@ -55,7 +55,7 @@ input[type="file"]::file-selector-button {
   padding: 0 15px;
   height: 40px;
   cursor: pointer;
-  background-color: grey;
+  background-color: #b1a7a6;
   border: none;
   color: white;
   text-align: center;
@@ -66,8 +66,13 @@ input[type="file"]::file-selector-button {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
 }
 
+input[type="file"],
+textarea {
+  color: white;
+}
+
 input[type="file"]::file-selector-button:hover {
-  background-color: darkgray;
+  background-color: lightgray;
 }
 
 input[type="file"]::file-selector-button:active {
@@ -76,7 +81,7 @@ input[type="file"]::file-selector-button:active {
 
 #box {
   width: 600px;
-  background-color: grey;
+  background-color: #b1a7a6;
   border: none;
   color: white;
   padding: 15px 32px;
