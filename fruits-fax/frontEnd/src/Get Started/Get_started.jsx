@@ -63,6 +63,7 @@ const Get_started = () => {
 
   const confirm = async () => {
     let name = document.getElementById("name").value;
+    const divdisplay = document.querySelector("#display");
     try {
       let response = await fetch(
         `https://exm1-fhj3nm4qsq-uc.a.run.app/api/${name}`
@@ -75,12 +76,13 @@ const Get_started = () => {
       console.log(searchNutritionformatted);
 
       let searchFruitHTML = `
-      <div className="innerBox">
+      <div class="innerBox">
         <h3>${searchFruit.name}</h3>
         <div>${searchNutritionformatted}</div>
       </div>
       `;
 
+      divdisplay.style.display = "block";
       document.getElementById("display").innerHTML = searchFruitHTML;
     } catch (error) {
       alert("ERROR! INPUT THE CORRECT NAME OF THE FRUIT");
@@ -91,6 +93,7 @@ const Get_started = () => {
   const picture = async () => {
     var input = document.getElementById("imageInput");
     var file = input.files[0];
+    const divdisplay = document.querySelector("#display");
 
     if (file) {
       var formData = new FormData();
@@ -112,17 +115,19 @@ const Get_started = () => {
         console.log(picNutritionformatted);
 
         let picFruitHTML = `
-        <div className="innerBox">
+        <div class="innerBox">
           <h3>${picFruit.name}</h3>
           <div>${picNutritionformatted}</div>
         </div>
         `;
 
+        divdisplay.style.display = "block";
         document.getElementById("display").innerHTML = picFruitHTML;
       } catch (error) {
         console.error("Error uploading image:", error);
       }
     } else {
+      alert("ERROR! NO PICTURE CHOSEN");
       console.log("No file selected.");
     }
   };
@@ -139,29 +144,28 @@ const Get_started = () => {
   };
 
   return (
-    <section id="get_started">
-      <div className="whole">
-        <header>
-          <h1 style={{ textAlign: "center" }}>Fruit Searchbar</h1>
-        </header>
-        <div className="fields">
-          <input type="text" placeholder="NAME" id="name" />
-        </div>
-        <div className="fields">
-          <input type="file" id="imageInput" accept="image/*" />
-        </div>
-        <div className="fields">
-          <input type="button" onClick={confirm} value="Format" id="box" />
-          <input
-            type="button"
-            onClick={picture}
-            value="PICTURE Format"
-            id="box"
-          />
-        </div>
-        <div id="display"></div>
+    <div id="get_started">
+      <h1>Fruit Searchbar</h1>
+      <div class="search">
+        <input type="text" placeholder="Name of Fruit" id="name" />
+      </div>
 
-        {/* <div className="App">
+      <div class="pic">
+        <input type="file" id="imageInput" accept="image/*" />
+      </div>
+
+      <button onClick={confirm} id="box">
+        Search by Name
+      </button>
+      <button onClick={picture} id="box">
+        Search by Picture
+      </button>
+      <div id="display"></div>
+    </div>
+  );
+
+  {
+    /* <div className="App">
           <input type="file" onChange={handleFileChange} />
           <button onClick={handleUpload}>Upload</button>
 
@@ -174,10 +178,8 @@ const Get_started = () => {
               <img src={downloadURL} alt="Latest Uploaded" />
             </div>
           )}
-        </div> */}
-      </div>
-    </section>
-  );
+        </div> */
+  }
 };
 
 export default Get_started;
