@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@200;300;400;500;600;700&display=swap");
+
+body {
+  font-family: "Rubik", sans-serif !important;
+  background-color: rgb(243, 247, 248);
+}
+
+.navbar {
+  background-color: #880000a1;
+  color: #fff;
+  width: 100%;
+  position: fixed !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  height: 72vh;
+}
