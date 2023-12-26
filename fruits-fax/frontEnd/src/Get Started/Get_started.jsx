@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap CSS
 
 import "./get_started.css";
 
@@ -144,24 +145,28 @@ const Get_started = () => {
   };
 
   return (
-    <section id="get_started">
-      <h1>Fruit Searchbar</h1>
-      <div class="search">
-        <input type="text" placeholder="Name of Fruit" id="name" />
-      </div>
+    <div class="row flu">
+      <div class="col-lg-12">
+        <section id="get_started" class="col-12">
+          <h1>Fruit Searchbar</h1>
+          <div class="search">
+            <input type="text" placeholder="Name of Fruit" id="name" />
+          </div>
 
-      <div class="pic">
-        <input type="file" id="imageInput" accept="image/*" />
-      </div>
+          <div class="pic">
+            <input type="file" id="imageInput" accept="image/*" />
+          </div>
 
-      <button onClick={confirm} id="box">
-        Search by Name
-      </button>
-      <button onClick={picture} id="box">
-        Search by Picture
-      </button>
-      <div id="display"></div>
-    </section>
+          <button onClick={confirm} id="box">
+            Search by Name
+          </button>
+          <button onClick={picture} id="box">
+            Search by Picture
+          </button>
+          <div id="display"></div>
+        </section>
+      </div>
+    </div>
   );
 
   {

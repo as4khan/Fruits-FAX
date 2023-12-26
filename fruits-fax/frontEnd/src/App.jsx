@@ -13,8 +13,10 @@ const App = () => {
     <>
       <NavBar />
       <Home />
-      <About />
-      <Get_started />
+      <div class="container-fluid">
+        <About />
+        <Get_started />
+      </div>
     </>
   );
 };

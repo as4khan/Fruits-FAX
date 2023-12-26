@@ -4,13 +4,17 @@
   align-items: center;
   flex-direction: column;
   background-color: rgba(255, 0, 0, 0.65);
-  padding: 40px;
-  max-width: 100%;
+  width: 100%;
   min-height: 800px;
 }
 h1 {
-  font-size: 7rem !important;
+  font-size: 8.5vw !important;
   color: rgba(255, 255, 255, 0.95) !important;
+}
+
+.flu {
+  display: flex;
+  justify-content: space-between;
 }
 
 #get_started > * {
@@ -18,7 +22,15 @@ h1 {
   align-items: center;
   justify-content: center;
   padding: 0 5px;
-  margin: 10px 15px;
+  margin: 10px 1vw;
+}
+
+.row {
+  margin: 0 !important;
+}
+
+.col-lg-12 {
+  padding: 0 !important;
 }
 
 .search input {
@@ -28,7 +40,7 @@ h1 {
   background: white;
   padding: 15px;
   border-radius: 3px;
-  width: 1000px;
+  width: 60vw;
   font-size: 20px;
 }
 
@@ -69,6 +81,7 @@ input[type="file"]::file-selector-button {
 input[type="file"],
 textarea {
   color: white;
+  margin-bottom: 25px;
 }
 
 input[type="file"]::file-selector-button:hover {
@@ -80,7 +93,7 @@ input[type="file"]::file-selector-button:active {
 }
 
 #box {
-  width: 600px;
+  width: 40vw;
   background-color: #b1a7a6;
   border: none;
   color: white;
@@ -108,7 +121,7 @@ button:active {
   border: 4px solid #ddd;
   padding: 20px;
   border-radius: 5px;
-  width: 500px;
+  width: 65vw;
   display: none;
 }
 

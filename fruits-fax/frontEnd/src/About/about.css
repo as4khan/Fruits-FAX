@@ -1,60 +1,85 @@
-.about__container{
-    display: flex;
-    height: 635px;
-    width: 99%;
-    padding-top: 60px;
-    margin-left: 10px;
+.flu {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
 }
 
-.about__description{
-    font-size: 20px;
-    background-color: #d80303a1;
-    color: white;
-    width: 60%;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-top: 10px;
-    margin-left: 15px;
-    margin-right: 40px;
-    border-radius: 2rem;
-    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.15);
+.about__container {
+  height: 40rem;
+  width: 100%;
+  margin: 0 !important;
 }
 
-.about__image{
-    width: 40%;
-    background-color: #d80303a1;
-    height: 100%;
-    border-radius: 2rem;
-    margin-right: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center the image horizontally */
-    justify-content: center; /* Center the image vertically */
-    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.15);
+.row {
+  margin: 0 !important;
 }
 
-.about__image img{
-    margin-top: 10px;
-    width: 85%;
-    height: 80%;
-    
+.box {
+  padding: 20px !important;
 }
 
-.about__image h3{
-    color: white;
-    text-align: center;;
-    padding-left: 5px;
-    padding-right: 5px;
+.about__description {
+  font-size: 100%;
+  background-color: #d80303a1;
+  color: white;
+  border-radius: 2rem;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  min-height: 100%;
+  text-align: center;
 }
 
-/*
-.about__title{
-    display: flex;
-    grid-template-columns: 1fr 1fr;
+h2 {
+  margin: 25px 0;
+  text-align: center;
 }
 
-.about__description{
-    display: flex;
-    grid-template-columns: 1fr 1fr;
+.about__image {
+  background-color: #d80303a1;
+  min-height: 100% !important;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.15);
 }
-*/
+
+.about__image img {
+  margin-top: 2.5rem;
+  width: 85%;
+  height: 80%;
+}
+
+.about__image h3 {
+  color: white;
+  text-align: center;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+figcaption {
+  color: white;
+  text-align: center;
+  margin: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+@media (max-width: 450px) {
+  .about__description {
+    font-size: 85%;
+  }
+}
+
+@media (min-width: 451px) {
+  .about__description {
+    font-size: 100%;
+  }
+}
+
+@media (min-width: 1100px) {
+  .about__description {
+    font-size: 130%;
+  }
+}

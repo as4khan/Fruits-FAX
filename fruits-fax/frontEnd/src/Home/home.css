@@ -5,11 +5,6 @@
   padding-top: 40vh;
 }
 
-.header h1 {
-  font-size: 135px;
-  margin: 0;
-}
-
 .header h5 {
   margin: 0;
   margin-bottom: 10px;
@@ -19,4 +14,62 @@
   background-size: cover;
   width: 100%;
   height: 100vh;
+}
+
+.header h1 {
+  margin: 0;
+  color: rgba(255, 0, 0, 0.65) !important;
+  font-size: 12vw !important;
+}
+
+@media (max-width: 450px) {
+  .header {
+    color: rgb(255, 0, 0);
+    font-size: 25px;
+    padding-top: 50vh;
+    padding-left: 0;
+    text-align: center;
+  }
+  h5 {
+    font-size: 6vw;
+  }
+
+  .header h1 {
+    font-size: 15vw !important;
+    color: rgba(255, 255, 255, 0.77) !important;
+  }
+}
+
+@media (min-width: 451px) {
+  .header {
+    color: rgba(255, 255, 255, 0.73);
+    padding-top: 59vh;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  h5 {
+    font-size: 5vw;
+  }
+
+  .header h1 {
+    font-size: 15vw !important;
+    color: rgba(255, 0, 0, 0.77) !important;
+  }
+}
+
+@media (min-width: 850px) {
+  .header {
+    color: rgba(255, 0, 0, 0.65);
+    font-size: 30px;
+    padding-left: 53vw;
+    padding-top: 40vh;
+    text-align: left;
+  }
+  .header h1 {
+    font-size: 7vw !important;
+  }
+  .header h5 {
+    font-size: 25px;
+  }
 }
