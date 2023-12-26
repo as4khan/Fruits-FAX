@@ -49,3 +49,50 @@
   padding-left: 15px;
   padding-right: 15px;
 }
+
+@media (max-width: 400px) {
+  .container {
+    flex-direction: column;
+  }
+  .nav-links a {
+    font-size: 13px;
+  }
+
+  .nav-links a:hover {
+    font-size: 17px;
+  }
+  .nav-links {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 5px;
+  }
+
+  .logo img {
+    width: 60px;
+    height: 100%;
+  }
+}
+
+@media (min-width: 401px) {
+  .nav-links a {
+    font-size: 18px;
+  }
+
+  .nav-links a:hover {
+    font-size: 20px;
+  }
+  .logo img {
+    padding: 5px;
+    width: 88px;
+    height: 100%;
+  }
+  .container {
+    flex-direction: row;
+  }
+  .nav-links {
+    list-style: none;
+    display: flex;
+    padding: 0;
+  }
+}
