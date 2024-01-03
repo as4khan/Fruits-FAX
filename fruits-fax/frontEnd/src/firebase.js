@@ -8,13 +8,13 @@ import { getStorage } from "firebase/storage";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyCA3-ZpEkJCAB06F4tVjtqAjRuPWCMA8dY",
-  authDomain: "fruits-fax.firebaseapp.com",
+  apiKey: "XXXXXXXXX",
+  authDomain: "XXXXXXXXXXXX",
   projectId: "fruits-fax",
-  storageBucket: "fruits-fax.appspot.com",
-  messagingSenderId: "593490553415",
-  appId: "1:593490553415:web:3c1161e0a259a6b5a91f62",
-  measurementId: "G-Y7BY653K87",
+  storageBucket: "XXXXXXXXXXXXX",
+  messagingSenderId: "XXXXXXXXXXXXXXXXX",
+  appId: "XXXXXXXXXXXXXXXXXXX",
+  measurementId: "XXXXXXXXXXXXXXXXXX",
 };
 
 // Initialize Firebase
