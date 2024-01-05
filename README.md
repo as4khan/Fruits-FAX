@@ -10,6 +10,17 @@ Fruit-FAX is an innovative website dedicated to providing comprehensive nutritio
 
 Visit Fruit-FAX at [https://fruits-fax.web.app](https://fruits-fax.web.app).
 
+## Website Contents
+
+### Home
+![Home Section](images/home_section.PNG)
+
+### About
+![About Section](images/about_section.PNG)
+
+### Get Started
+![Get Started Section](images/searchbar_section.PNG)
+
 ## Prerequisites
 
 Before using Fruit-FAX, ensure the following are installed:
