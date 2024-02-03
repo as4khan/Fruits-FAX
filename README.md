@@ -12,7 +12,12 @@ Visit Fruit-FAX at [https://fruits-fax.web.app](https://fruits-fax.web.app).
 
 ## Website Contents
 
+### Demo video
+
+https://github.com/KaziShaffan/Fruits-FAX/assets/133924179/4e6e6a34-a816-4b06-b76f-0457dccd07e0
+
 ### Home
+
 ![Home Section](images/home_section.PNG)
 
 ### About
